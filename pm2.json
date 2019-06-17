@@ -1,0 +1,16 @@
+{
+    "apps": [{
+        "name": "img-mini-server",
+        "script": "bin/www",
+        "cwd": "/space/img-mini-server",
+        "ignore_watch": [
+            "node_modules",
+            "logs",
+            "public"
+        ],
+        "env": {
+            "PORT": "8014",
+            "NODE_ENV": "production"
+        }
+    }]
+}
