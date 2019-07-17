@@ -16,7 +16,7 @@ const Png = pngquant({
 const Gif = gifsicle();
 
 const Jpg = mozjpeg({
-    quality: 90
+    quality: 85
 });
 
 const router = express.Router();
