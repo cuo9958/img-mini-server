@@ -10,11 +10,13 @@ const gifsicle = require('imagemin-gifsicle');
 const mozjpeg = require('imagemin-mozjpeg');
 const sr = require("stream");
 
-const Png = pngquant();
+const Png = pngquant({
+    speed: 7
+});
 const Gif = gifsicle();
 
 const Jpg = mozjpeg({
-    quality: 75
+    quality: 90
 });
 
 const router = express.Router();
